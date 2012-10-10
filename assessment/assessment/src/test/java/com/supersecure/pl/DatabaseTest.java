@@ -17,13 +17,14 @@ public class DatabaseTest {
 	}
 
 	@Test
-	public void find_Similar_Named_Languages_For_Java_Is_JavaScript() {
+	public void find_Similar_Named_Languages_For_Java_Is_Not_JavaScript() {
 
+		database.add("Java");
 		database.add("JavaScript");
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("Java");
 
-		assertEquals("JavaScript", similarLanguageNames[0]);
+		assertEquals("Java", similarLanguageNames[0]);
 	}
 
 	@Test
@@ -33,9 +34,8 @@ public class DatabaseTest {
 		database.add("C");
 		database.add("C#");
 		String[] similarLanguageNames = database
-				.findSimilarNamedLanguages("Java");
+				.findSimilarNamedLanguages("C");
 
-		assertArrayContains(similarLanguageNames, "C++");
 		assertArrayContains(similarLanguageNames, "C");
 		assertArrayContains(similarLanguageNames, "C#");
 	}
@@ -44,12 +44,11 @@ public class DatabaseTest {
 	public void find_Similar_Named_Languages_For_Lisp() {
 
 		database.add("Lisp");
-		database.add("CommonLisp");
+		database.add("ELisp");
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("Lisp");
 
-		assertArrayContains(similarLanguageNames, "Lisp");
-		assertArrayContains(similarLanguageNames, "CommonLisp");
+		assertArrayContains(similarLanguageNames, "ELisp");
 	}
 
 	@Test
