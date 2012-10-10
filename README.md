@@ -7,9 +7,9 @@ Der externe Dienstleister „Nearshore“ schickte ihren Consultant Herrn Klaus 
  
 Leider fand bei der „SuperSecure AG“ kurz nach Vollendung der Anwendung „PL“ eine Restrukturierungsmaßnahme statt. Dieser fiel die Abteilung „X3KB“ und Klaus Klammer zum Opfer. Der neue Abteilungsleiter möchte die Anwendung (da sie teuer war) aber gerne produktiv einsetzen.
 
-Es gibt wohl keinerlei Dokumentation zu „PL“ und Herr Klaus ist nicht mehr erreichbar. Zur Rettung der Investition wird die InnoQ mit der Begutachtung, Dokumentation und Wartung der Anwendung betraut.
+Es gibt wohl keinerlei Dokumentation zu „PL“ und Herr Klaus ist nicht mehr erreichbar. Zur Rettung der Investition wird die innoQ mit der Begutachtung, Dokumentation und Wartung der Anwendung betraut.
 
-Diese Aufgabe wird **DIR** als Consultant der InnoQ übertragen!
+Diese Aufgabe wird **DIR** als Consultant der innoQ übertragen!
 
 ##IST-Zustand
 Bei deiner Ankunft bei der „SuperSecure AG“ wird dir der Code der Anwendung übergeben. Recht schnell wird dir klar das:
