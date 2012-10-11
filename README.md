@@ -70,7 +70,7 @@ Die Methode **findSimilarNamedLanguages** scheint noch nicht implementiert wor
 - Je schneller sie ist desto besser!
 - Die Testfälle sollten funktionieren!
 
-###Hilfmittel
+###Hilfsmittel
 - Google
 
 
