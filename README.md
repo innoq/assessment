@@ -27,7 +27,7 @@ Der Code besteht aus folgenden Klassen:
 - REPL
 - DatabaseTest
 
-und ist hier zu finden: https://gist.github.com/3859394
+und ist in diesem Repositiory zu finden.
 
 Der neue Abteilungsleiter der SuperSecure AG gibt dir noch eine Aufgabenbeschreibung mit auf den Weg und weißt dich eindringlich darauf hin das Security das A und O ist. **Deswegen ist es dir nicht erlaubt Klassen aus anderen Packages als java.lang und java.util zu benutzen**, da sie in der Firma als nicht sicher gelten.
 
