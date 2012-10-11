@@ -24,7 +24,7 @@ public class DatabaseTest {
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("Java");
 
-		assertEquals("Java", similarLanguageNames[0]);
+		assertEquals(similarLanguageNames[0],"Java");
 	}
 
 	@Test
@@ -36,8 +36,7 @@ public class DatabaseTest {
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("C");
 
-		assertArrayContains(similarLanguageNames, "C");
-		assertArrayContains(similarLanguageNames, "C#");
+		assertArrayContentIsEquals(similarLanguageNames, "C#","C");
 	}
 
 	@Test
@@ -48,7 +47,7 @@ public class DatabaseTest {
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("Lisp");
 
-		assertArrayContains(similarLanguageNames, "ELisp");
+		assertArrayContentIsEquals(similarLanguageNames, "ELisp","Lisp");
 	}
 
 	@Test
@@ -57,9 +56,9 @@ public class DatabaseTest {
 		database.add("Ada");
 		database.add("Agora");
 		String[] similarLanguageNames = database
-				.findSimilarNamedLanguages("Ado");
+				.findSimilarNamedLanguages("Aga");
 
-		assertArrayContains(similarLanguageNames, "Ada");
+		assertArrayContentIsEquals(similarLanguageNames, "Ada");
 	}
 	
 
@@ -71,11 +70,14 @@ public class DatabaseTest {
 		String[] similarLanguageNames = database
 				.findSimilarNamedLanguages("Ado");
 
-		assertArrayContains(similarLanguageNames, "Ada");
+		assertArrayContentIsEquals(similarLanguageNames, "Ada");
 	}
 
 	
-	private void assertArrayContains(Object[] array, Object... objects) {
+	private void assertArrayContentIsEquals(Object[] array, Object... objects) {
+		
+		assertSame(array.length, objects.length);
+		
 		boolean contains = false;
 		for (Object object : objects) {
 			for (Object item : array) {
