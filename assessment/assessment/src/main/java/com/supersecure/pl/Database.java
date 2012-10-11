@@ -51,8 +51,8 @@ public class Database {
 	}
 
 	/**
-	 * Helps if you are not completely secure about a name of a specifiv
-	 * language. This methode searches in all know languages for <b>similar</b>
+	 * Helps if you are not completely secure about a name of a specific
+	 * language. This method searches in all know languages for <b>similar</b>
 	 * named ones.
 	 * 
 	 * In this context <b>similar</b> means the name could be derived from the
