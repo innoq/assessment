@@ -76,7 +76,7 @@ public class DatabaseTest {
 	
 	private void assertArrayContentIsEquals(Object[] array, Object... objects) {
 		
-		assertSame(array.length, objects.length);
+		assertEquals(array.length, objects.length);
 		
 		boolean contains = false;
 		for (Object object : objects) {
